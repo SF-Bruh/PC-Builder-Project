@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Build Buddy - Your PC Building & Maintenance Helper</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <nav class="top-nav">
+      <div class="nav-brand" onclick="goHome()">
+        <span class="nav-icon">🖥️</span>
+        <span class="nav-title">PC Build Buddy</span>
+      </div>
+      <button class="nav-restart" onclick="goHome()" title="Start Over">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 1 3.5-7.1"/><polyline points="3 3 3 8 8 8"/></svg>
+        <span>Start Over</span>
+      </button>
+    </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <main class="chat-container" id="chatContainer"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
