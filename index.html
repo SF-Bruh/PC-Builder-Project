@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PC Build Buddy">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>PC Build Buddy - Your PC Building & Maintenance Helper</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +15,7 @@
 </head>
 <body>
   <div id="app">
+    <!-- Top Nav -->
     <nav class="top-nav">
       <div class="nav-brand" onclick="goHome()">
         <span class="nav-icon">🖥️</span>
@@ -20,14 +26,22 @@
         <span>Start Over</span>
       </button>
     </nav>
+
+    <!-- Progress Bar -->
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>
     </div>
-    <main class="chat-container" id="chatContainer"></main>
+
+    <!-- Main Content Area (chat-like) -->
+    <main class="chat-container" id="chatContainer">
+      <!-- Messages get injected here -->
+    </main>
   </div>
+
   <script src="app-core.js"></script>
   <script src="app-build.js"></script>
   <script src="app-upgrade.js"></script>
   <script src="app-fix.js"></script>
+  <script src="app-chat.js"></script>
 </body>
 </html>
